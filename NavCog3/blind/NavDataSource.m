@@ -24,6 +24,7 @@
 #import "NavDataSource.h"
 #import "LocationEvent.h"
 #import <FormatterKit/TTTOrdinalNumberFormatter.h>
+#import "NavCogMiraikan-Swift.h"
 
 #pragma mark - Destination Data Source
 
@@ -181,6 +182,7 @@
     
     HLPDirectoryItem *item = [self itemForRowAtIndexPath:indexPath];
     NavDestination *dest = [self destinationForRowAtIndexPath:indexPath];
+    [MiraikanUtil printNodeWithNodeId:dest._id place:dest.name];
 
     cell.accessoryType = UITableViewCellAccessoryNone;
     if (dest.filter) {

@@ -449,7 +449,8 @@
         //self.cover.hidden = devMode || !isActive;
         self.cover.hidden = devMode;
         
-        self.searchButton.enabled = !isNaviStarted;
+//        self.searchButton.enabled = !isNaviStarted;
+        self.searchButton.enabled = YES;
         
         self.navigationItem.leftBarButtonItem = nil;
         if ((isActive && !devMode) || previewMode || initFlag) {
